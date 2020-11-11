@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Campeonato Esportivo - Detalhe</title>
+        <link rel="stylesheet" href="/static/css/reset.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <img src="/static/img/logo.png" alt="Logo da Campeonato Esportivo" id="logo">
+                <nav>
+                    <ul>
+                        <li><a href="home">home</a></li>
+                        <li><a href="detalhe">detalhe</a></li>
+                        <li><a href="cadastro">cadastrar</a></li>
+                        <li><a href="listar">Lista</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <br/>
+            <h1>Cadastrar</h1>
+            <form action="cadastrar" method="POST" id="cadastro"> <!--action="cadastrar" method="POST"-->
+                <p id="icadastro">
+                    <label for="inome">Nome:</label><br/>
+                    <input type="text" placeholder="Nome Completo" name="nnome" id="inome" maxlength="50" required/>
+                </p>
+                <p id="icadastro">
+                    <label for="itel">Telefone:</label><br/>
+                    <input type="text" placeholder="(XX)XXXX-XXXX" name="ntelefone" id="itelefone" maxlength="14" required/>
+                </p>
+                <p id="icadastro">
+                    <label for="iemail">E-mail:</label><br/>
+                    <input type="email" placeholder="Digite seu e-mail" name="nemail" id="iemail" maxlength="50" required/>
+                </p>
+                <p id="icadastro">Sexo:<br/>
+                    <input type="radio" name="nsexo" id="Masc" value="Masculino" checked/> 
+                    <label for="Masc">Masculino</label>
+                    |
+                    <input type="radio" name="nsexo" id="Fem" value="Feminino"/>
+                    <label for="Fem">Feminino</label> 
+                    <!--
+                    <label for="isexo" >Sexo:</label><br/>
+                    <input list="browsers" id="isexo" placeholder="Clique na seta para ver a lista"/>
+                    <datalist id="browsers">
+                        <option value="Feminino">
+                        <option value="Masculino">
+                    </datalist>-->
+                </p>
+                <p id="icadastro">
+                    <label for="inascimento">Data de Nascimento:</label><br/>
+                    <input type="date" name="nnascimento" id="inascimento" required/>
+                </p>
+                <p id="icadastro">
+                     <input type="submit" id="ienviar"/>
+                </p>
+                
+            </form>
+            <br/>
+        </main>
+        <footer>
+            <p class="copyright">&copy; Copyright Campeonato Esportivo - 2020</p>
+        </footer>
+    </body>
+</html>
